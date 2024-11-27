@@ -8,7 +8,7 @@ const usage =
     \\Usage: sdat2img [options]
     \\Options:
     \\  --input-image   [path]  Path for input image(eg, system.new.dat)
-    \\  --input_image   [file]  Path for output raw image
+    \\  --output-image  [file]  Path for output raw image
     \\  --transfer-list [file]  Path for system.transfer.list 
     \\  -h, --help              Print this help menu to stdout
     \\
