@@ -2,7 +2,7 @@ const std = @import("std");
 const mem = std.mem;
 const File = std.fs.File;
 const fatal = std.zig.fatal;
-const TransferList = @import("root.zig");
+const TransferList = @import("TransferList.zig");
 
 const usage =
     \\Usage: sdat2img [options]
@@ -66,4 +66,8 @@ pub fn main() !void {
     defer output_image.close();
 
     try list.writeImage(&input_image, &output_image);
+}
+
+test {
+    _ = @import("TransferList.zig");
 }
